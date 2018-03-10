@@ -10,8 +10,6 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Baza
 TEMPLATE = app
-#CONFIG+= static
-
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -37,12 +35,3 @@ FORMS    += mainwindow.ui \
     dialog4.ui
 
 RC_FILE = power.rc
-
-static { # everything below takes effect with CONFIG ''= static
- CONFIG+= static
- DEFINES+= STATIC
- message("~~~ static build ~~~") # this is for information, that the static build is done
-
- win32: TARGET = $$join(TARGET,,,s) #this adds an s in the end, so you can seperate static build fromnon static build
-
-}

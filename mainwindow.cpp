@@ -18,11 +18,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
     loadList();
     setLicznik(elem.length());
-
-
 }
 
 MainWindow::~MainWindow()
@@ -269,5 +266,4 @@ void MainWindow::setLicznik(int liczba){
 }
 void MainWindow::reset(){
     ui->listWidget->clear();
-    //setLicznik(licznik(poczDTPL));
 }
