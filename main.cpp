@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     w = new MainWindow();
     w->setAttribute(Qt::WA_DeleteOnClose);    
     w->show();
-	int z=0;
+    int z=4;
 
 
     return a.exec();
